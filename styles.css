@@ -1,0 +1,82 @@
+@import "compass/css3";
+
+body {
+  font-family: Helvetica;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.donation-meter {
+  width: 100px;
+  text-align: center; /* Center text within the meter */
+}
+
+.donation-meter .glass {
+  background: #e5e5e5;
+  border-radius: 100px 100px 0 0;
+  display: block;
+  height: 300px;
+  margin: 0 auto 10px; /* Center the glass within the meter */
+  padding: 5px;
+  position: relative;
+  width: 20px;
+}
+
+.donation-meter .amount {
+  background: green;
+  border-radius: 100px;
+  display: block;
+  width: 20px;
+  position: absolute;
+  bottom: 5px;
+}
+
+.donation-meter strong {
+  display: block;
+  text-align: center;
+}
+
+.donation-meter .goal {
+  font-size: 30px;
+}
+
+.donation-meter .total {
+  font-size: 16px;
+  position: absolute;
+  left: 35px; /* Adjust to center within the glass */
+}
+
+.bulb {
+  background: #e5e5e5;
+  border-radius: 100px;
+  display: block;
+  height: 50px;
+  margin: 0 auto 10px; /* Center the bulb within the meter */
+  padding: 5px;
+  position: relative;
+  top: -20px;
+  width: 50px;
+}
+
+.bulb .red-circle {
+  background: green;
+  border-radius: 100px;
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+
+.bulb .filler {
+  background: green;
+  border-radius: 100px 100px 0 0;
+  display: block;
+  height: 30px;
+  width: 20px;
+  position: relative;
+  top: -65px;
+  left: 15px;
+  z-index: 30;
+}
